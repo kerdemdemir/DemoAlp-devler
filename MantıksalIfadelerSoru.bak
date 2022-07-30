@@ -14,9 +14,9 @@ namespace odev_12
             bisikletSayisi = Convert.ToInt16(Console.ReadLine());
             Console.WriteLine("Mesafe ne kadar");
             mesafe = Convert.ToInt16(Console.ReadLine());
-            Console.WriteLine("Araba var mi?");
+            Console.WriteLine("Araba var mı?");
             arabaVarmi = Convert.ToBoolean(Console.ReadLine());
-            Console.WriteLine("Ehliyet var mi?");
+            Console.WriteLine("Ehliyet var mı?");
             ehliyetVarmi = Convert.ToBoolean(Console.ReadLine());
             
             if ((kisiSayisi <= 5 && ehliyetVarmi && arabaVarmi) || (mesafe < 10 && bisikletSayisi >= kisiSayisi))
