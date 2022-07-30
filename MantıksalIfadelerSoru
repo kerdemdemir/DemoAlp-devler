@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace odev_12
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int kisi, bisiklet, mesafe;
+            bool araba, ehliyet;
+            Console.WriteLine("kac kisiyiz");
+            kisi = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("kac bisiklet var");
+            bisiklet = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("mesafe ne kadar");
+            mesafe = Convert.ToInt16(Console.ReadLine());
+            Console.WriteLine("araba var mı");
+            araba = Convert.ToBoolean(Console.ReadLine());
+            Console.WriteLine("ehliyet");
+            ehliyet = Convert.ToBoolean(Console.ReadLine());
+            
+            if (kisi <= 5 && ehliyet == true && araba == true)
+            {
+                Console.WriteLine("araba ile plaja gidebilirsiniz " + true);
+            }
+            else if (mesafe < 10 && bisiklet >= kisi)
+            {
+                Console.WriteLine("bisiklet ile plaja gidebilirsiniz " + true);
+            }
+            else
+            {
+                Console.WriteLine("plaja suanda gidemezsiniiz " + false);
+            }
+            Console.ReadKey();
+        }
+    }
+}
